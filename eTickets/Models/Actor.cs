@@ -1,12 +1,16 @@
-﻿using System.Collections.Generic;
+﻿using eTickets.Data.Base;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace eTickets.Models
 {
-    public class Actor 
+    public class Actor
     {
         [Key]
-        public int Id { get; set; }
+        public int ActorId { get; set; }
+
+
         [Display(Name = "Profile Picture")]
         [Required(ErrorMessage = "Profile Picture is required")]
         public string ProfilePictureURL { get; set; }
@@ -22,6 +26,12 @@ namespace eTickets.Models
 
         //Relationships
         public List<Actor_Movie> Actors_Movies { get; set; }
+
+
+      
+       
+
+
 
 
     }

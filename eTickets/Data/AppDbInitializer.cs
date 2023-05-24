@@ -142,7 +142,7 @@ namespace eTickets.Data
                         new Movie()
                         {
                             Name = "Life",
-                            Description = "This is the Life movie description",
+                            Description = "ThisistheLifemoviedescription",
                             Price = 39.50,
                             ImageURL = "http://dotnethow.net/images/movies/movie-3.jpeg",
                             StartDate = DateTime.Now.AddDays(-10),
@@ -153,8 +153,8 @@ namespace eTickets.Data
                         },
                         new Movie()
                         {
-                            Name = "The Shawshank Redemption",
-                            Description = "This is the Shawshank Redemption description",
+                            Name = "TheShawshankRedemption",
+                            Description = "ThisistheShawshankRedemptiondescription",
                             Price = 29.50,
                             ImageURL = "http://dotnethow.net/images/movies/movie-1.jpeg",
                             StartDate = DateTime.Now,
@@ -166,7 +166,7 @@ namespace eTickets.Data
                         new Movie()
                         {
                             Name = "Ghost",
-                            Description = "This is the Ghost movie description",
+                            Description = "ThisistheGhostmoviedescription",
                             Price = 39.50,
                             ImageURL = "http://dotnethow.net/images/movies/movie-4.jpeg",
                             StartDate = DateTime.Now,
@@ -178,7 +178,7 @@ namespace eTickets.Data
                         new Movie()
                         {
                             Name = "Race",
-                            Description = "This is the Race movie description",
+                            Description = "ThisistheRacemoviedescription",
                             Price = 39.50,
                             ImageURL = "http://dotnethow.net/images/movies/movie-6.jpeg",
                             StartDate = DateTime.Now.AddDays(-10),
@@ -190,7 +190,7 @@ namespace eTickets.Data
                         new Movie()
                         {
                             Name = "Scoob",
-                            Description = "This is the Scoob movie description",
+                            Description = "ThisistheScoobmoviedescription",
                             Price = 39.50,
                             ImageURL = "http://dotnethow.net/images/movies/movie-7.jpeg",
                             StartDate = DateTime.Now.AddDays(-10),
@@ -202,7 +202,7 @@ namespace eTickets.Data
                         new Movie()
                         {
                             Name = "Cold Soles",
-                            Description = "This is the Cold Soles movie description",
+                            Description = "ThisistheColdSolesmoviedescription",
                             Price = 39.50,
                             ImageURL = "http://dotnethow.net/images/movies/movie-8.jpeg",
                             StartDate = DateTime.Now.AddDays(3),
@@ -216,106 +216,48 @@ namespace eTickets.Data
 
                 }
                 //Actors&Movies
-                if (!context.Actor_Movies.Any())
-                {
-                     context.Actor_Movies.AddRange(new List<Actor_Movie>()
-                    {
-                        new Actor_Movie()
-                        {
-                            ActorId = 1,
-                            MovieId = 1
-                        },
-                        new Actor_Movie()
-                        {
-                            ActorId = 3,
-                            MovieId = 1
-                        },
+                //if (!context.Actor_Movies.Any())
+                //{
+                //     context.Actor_Movies.AddRange(new List<Actor_Movie>()
+                //    {
+                //        new Actor_Movie()
+                //        {
+                //            ActorId = 2,
+                //            MovieId = 1
+                //        },
+                //        new Actor_Movie()
+                //        {
+                //            ActorId = 3,
+                //            MovieId = 2
+                //        },
 
-                         new Actor_Movie()
-                        {
-                            ActorId = 1,
-                            MovieId = 2
-                        },
-                         new Actor_Movie()
-                        {
-                            ActorId = 4,
-                            MovieId = 2
-                        },
+                        
+                //         new Actor_Movie()
+                //        {
+                //            ActorId = 4,
+                //            MovieId = 4
+                //        },
 
-                        new Actor_Movie()
-                        {
-                            ActorId = 1,
-                            MovieId = 3
-                        },
-                        new Actor_Movie()
-                        {
-                            ActorId = 2,
-                            MovieId = 3
-                        },
-                        new Actor_Movie()
-                        {
-                            ActorId = 5,
-                            MovieId = 3
-                        },
+                       
+                //        new Actor_Movie()
+                //        {
+                //            ActorId = 5,
+                //            MovieId = 3
+                //        },
 
 
-                        new Actor_Movie()
-                        {
-                            ActorId = 2,
-                            MovieId = 4
-                        },
-                        new Actor_Movie()
-                        {
-                            ActorId = 3,
-                            MovieId = 4
-                        },
-                        new Actor_Movie()
-                        {
-                            ActorId = 4,
-                            MovieId = 4
-                        },
-
-
-                        new Actor_Movie()
-                        {
-                            ActorId = 2,
-                            MovieId = 5
-                        },
-                        new Actor_Movie()
-                        {
-                            ActorId = 3,
-                            MovieId = 5
-                        },
-                        new Actor_Movie()
-                        {
-                            ActorId = 4,
-                            MovieId = 5
-                        },
-                        new Actor_Movie()
-                        {
-                            ActorId = 5,
-                            MovieId = 5
-                        },
-
-
-                        new Actor_Movie()
-                        {
-                            ActorId = 3,
-                            MovieId = 6
-                        },
-                        new Actor_Movie()
-                        {
-                            ActorId = 4,
-                            MovieId = 6
-                        },
-                        new Actor_Movie()
-                        {
-                            ActorId = 5,
-                            MovieId = 6
-                        },
-                    });
-                    context.SaveChanges();
-                }
+                //        new Actor_Movie()
+                //        {
+                            
+                //            MovieId = 4,
+                //             ActorId = 6
+                //        },
+                       
+                        
+                        
+                //     });
+                //    context.SaveChanges();
+                //}
             }
         }
     }
