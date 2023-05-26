@@ -11,7 +11,7 @@ namespace eTickets.Models
         public int ActorId { get; set; }
 
 
-        [Display(Name = "Profile Picture")]
+        [Display(Name = "Profile Picture URL")]
         [Required(ErrorMessage = "Profile Picture is required")]
         public string ProfilePictureURL { get; set; }
 
